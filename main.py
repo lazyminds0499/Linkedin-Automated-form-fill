@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 from selenium.common.exceptions import NoSuchElementException
 
-chrome_driver_path = "C:/Users/Nitin/Development/chromedriver.exe"
+chrome_driver_path = "MY CHROME DRIVER"
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(executable_path=chrome_driver_path, options=options)
@@ -16,9 +16,9 @@ sign_in_button.click()
 time.sleep(3)
 
 user_name = driver.find_element_by_id("username")
-user_name.send_keys("nky7988@gmail.com")
+user_name.send_keys("MY EMAIL ID")
 password = driver.find_element_by_id("password")
-password.send_keys("8810nky@#0")
+password.send_keys("PASSWORD")
 password.send_keys(Keys.ENTER)
 
 
